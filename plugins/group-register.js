@@ -19,17 +19,14 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   let sn = createHash('md5').update(m.sender).digest('hex')
   m.reply(`
 ╭─────────────
+│ *_Registered Successful..✅_*
 │
-│ *Registered Successful..⏱️*
-│
-│ ➬*NUMBER:* ${name}
-│ ➬*AGE* : ${age} years
-│ ➬*ID* : ${sn}
-│
+│ ➬*NAME:* *${name}*
+│ ➬*AGE* : *${age} years*
+│ ➬*ID* : *${sn}*
 ╰─────────────
 
- jessi 
-`.trim())
+ Jessi-md`.trim())
 }
 handler.help = ['register'].map(v => v + ' <name.age>')
 handler.tags = ['Register']
