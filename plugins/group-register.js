@@ -4,7 +4,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   let user = global.db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
   if (user.registered === true) throw ` *You are already registered..😾*`
-  if (!Reg.test(text)) throw `*To register, give the following command.*\n\nExg:- *.register* ws.18`
+  if (!Reg.test(text)) throw `*🚫 To use premium features Register the bot.*\n\n*.register your-name. age*/n*.register ws. 18*`
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw ' *The name cannot contain a space...⏱*️'
   if (!age) throw ' *The age cannot contain a space...⏱️*'
